@@ -15,7 +15,7 @@ html {
     border: 1px solid black;
     max-width: 1280px;
     height: 3rem;
-    margin: 2rem 2%;
+    margin: 2% 2% 3% 2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,8 +33,13 @@ html {
 .logo-h4 {
     display: none;
     font-weight: 800;
-    margin-left: 0.5rem;
+    margin-left: 0.4rem;
+    margin-top: 5px;
     letter-spacing: 0.4cap;
+    /* box-shadow: 2px 2px 0px black; */
+}
+.logo-h4:hover {
+    color: #f5c346;
 }
 nav {
     display: flex;
@@ -57,12 +62,12 @@ nav li a:hover {
 }
 .search {
     padding-right: 4px;
-    padding-top: 2px;
+    padding-top: 1px;
     display: none;
 }
 
 .outer-cont {
-    margin: 2% 2%;
+    margin: 2% 2% 4rem 2%;
 } 
 .cont {
     display: grid;
@@ -114,6 +119,30 @@ h4 {
     text-align: left;
 }
 
+.featuredvideo {
+    /* border: 1px solid yellow; */
+    background-color: black;
+    display: grid;
+}
+.videocontainer {
+    /* border: 1px solid red; */
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.video {
+    /* border: 1px solid blue; */
+}
+.thevideo {
+    display: block;
+    padding: 3rem 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 30rem;
+}
+.videodescription {
+    color: white;
+}
+
 .contact {
     background: rgb(182,255,192);
     background: linear-gradient(90deg, rgba(182,255,192,1) 0%, rgba(182,255,192,1) 60%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
@@ -140,6 +169,17 @@ footer {
     }  
     .it5 {
         grid-column: span 2;
+    }
+    .videocontainer {
+        margin: 0 auto;
+        max-width: 1280px;
+        display: flex;
+        
+    }
+    .thevideo {
+        margin: 0 0;
+        padding: 0;
+        width: 50%;
     }
 
 @media only screen and (min-width: 1000px) {
@@ -197,4 +237,6 @@ footer {
     .it5 {
         grid-column: 3;
     }
+
+    
 }
