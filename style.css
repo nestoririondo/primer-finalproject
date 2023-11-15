@@ -87,6 +87,7 @@ nav li a:hover {
 /* Articles */
 .outer-cont {
     margin: 2% 2% 4rem 2%;
+    padding-bottom: 5rem;
 } 
 
 .cont {
@@ -166,8 +167,16 @@ h4 {
 }
 .videodescription {
     color: white;
+    padding-left: 20%;
+    padding-top: 3rem;
 }
 
+.icon-play{
+  filter: drop-shadow(5px 2px 0px white)
+  drop-shadow(-1px 1px 0px white) ;
+  width: 30px;
+  border-image: white;
+}
 /* Contact */
 .contact {
     background: rgb(182,255,192);
