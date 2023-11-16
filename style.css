@@ -242,6 +242,7 @@ h4 {
 }
 .media {
  margin: 3rem 0;
+ padding-right: 1rem;
 }
 .media1 {
     display: flex;
@@ -328,6 +329,7 @@ footer {
 }
 .footer-links {
     padding: 0 3rem;
+    font-size: 0.9rem;
 }
 .footer-links img {
     width: 40px;
@@ -398,6 +400,9 @@ footer {
     }
     .thevideo {
         margin: 0 auto;
+    }
+    .media {
+        padding-right: 0;
     }
 
     .social {
