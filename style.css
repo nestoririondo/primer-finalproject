@@ -9,7 +9,13 @@ html {
     text-align: justify;
     scroll-behavior: smooth;
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgb(92, 92, 92);
+}
 /* Header */
 .nav-container {
     border: 1px solid black;
@@ -39,7 +45,6 @@ html {
     margin-left: 0.4rem;
     margin-top: 5px;
     letter-spacing: 0.4cap;
-    /* box-shadow: 2px 2px 0px black; */
 }
 
 .logo-h4:hover {
@@ -221,12 +226,12 @@ h4 {
 }
 .socialcontainer {
     display: grid;
-    margin: 4rem auto;
+    margin: 10rem auto;
     max-width: 1280px;
     font-weight: 300;
 }
 .social {
-    margin: 0 auto;
+    margin: 0 auto ;
 }
 .media {
  margin: 3rem 0;
@@ -273,10 +278,63 @@ h4 {
 
 /* Footer */
 footer {
-    background-color: grey;
-    height: 30rem;
+    margin: 2% 2% 0 2%;
+    border-bottom: none;
 }
-
+.footerheight {
+    border: 1px solid black;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-shadow: 5px -5px black;
+}
+.footercontainer {
+    display: grid;
+    margin: 4rem auto;
+    max-width: 1280px;
+}
+.thefooter {
+    margin: 0 auto;
+}
+.footer-aboutus {
+    padding: 3rem 3rem;
+}
+.footer-aboutus h4 {
+    margin-bottom: 3rem;
+}
+.footer-aboutus img {
+    width: 50px;
+}
+.footer-links {
+    padding: 0 3rem;
+}
+.footer-links img {
+    width: 40px;
+}
+.footer-aboutus h3 {
+    letter-spacing: 0.4cap;
+}
+.footer-links ul {
+    padding: 1rem 1rem;
+}
+.footer-links li {
+    padding: 0.2rem 0;
+    list-style-type: square;
+}
+.footer-links a {
+    text-decoration: none;
+}
+.footer-links p {
+    font-size: 0.8rem;
+}
+.footer-socialmedia {
+    margin: 2rem 0;
+    display: flex;
+    gap: 1rem;
+}
+.footer-socialmedia img:hover {
+        opacity:0.6;
+        filter:alpha(opacity=100); 
+}
 /* Media queries */
 @media only screen and (min-width: 600px) {
     .logo-h4 {
@@ -318,6 +376,17 @@ footer {
         margin: 0 auto;
         gap: 4rem;
         align-items: center;
+    }
+    .thefooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+    .footer-aboutus {
+        padding: 0 0 0 3rem;
+    }
+    .footer-links {
+        padding: 0 0;
     }
 
 @media only screen and (min-width: 1000px) {
@@ -389,6 +458,11 @@ footer {
     }
     .socialoutercontainer {
         margin: 0rem 4rem;
+    }
+    footer {
+        margin: 0rem 4rem;
+    }
+    .footercontainer {
     }
 
   }
