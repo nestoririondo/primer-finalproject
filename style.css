@@ -12,10 +12,12 @@ html {
 a {
     text-decoration: none;
     color: black;
+    transition: color 0.3s ease;
 }
 a:hover {
     color: rgb(92, 92, 92);
 }
+
 /* Header */
 .nav-container {
     border: 1px solid black;
@@ -149,13 +151,18 @@ h4 {
     margin: 1rem 0 0.5rem 0;
     text-align: left;
 }
-.cont a{
-    text-decoration: none;
-    color: black;
+
+.it:hover .it__h2,
+.it:hover p,
+.it:hover img {
+    color: #929292;
 }
-.cont a:hover {
-    color: rgb(92, 92, 92);
+.it .it__h2,
+.it p,
+.it img {
+    transition: color 0.3s ease;
 }
+
 /* Read more */
 .readmoreoutercontainer {
     max-width: 1280px;
@@ -273,7 +280,19 @@ h4 {
 .sub button {
     padding: 0.8rem 1.5rem;
     border: none;
+    background-color: rgb(190, 190, 190);
 }
+.sub button:hover{
+    background-color: rgb(143, 143, 143);
+}
+
+.sub button:active{
+    background-color: rgb(92, 92, 92);
+}
+.sub button {
+    transition: background-color 0.3s ease;
+}
+
 /* About */
 
 /* Footer */
@@ -339,6 +358,11 @@ footer {
         filter:alpha(opacity=100); 
 }
 /* Media queries */
+@media only screen and (max-width: 320px) {
+    nav li a {
+        display: none;
+    }
+}
 @media only screen and (min-width: 600px) {
     .logo-h4 {
         display:inline;
@@ -390,6 +414,9 @@ footer {
     }
     .footer-links {
         padding: 0 0;
+    }
+    .footer-links p {
+        padding-right: 5%;
     }
 
 @media only screen and (min-width: 1000px) {
@@ -465,8 +492,5 @@ footer {
     footer {
         margin: 0rem 4rem;
     }
-    .footercontainer {
-    }
-
   }
 }
