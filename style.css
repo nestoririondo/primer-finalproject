@@ -304,6 +304,9 @@ footer {
 .footer-aboutus img {
     width: 50px;
 }
+.footer-aboutus p {
+    line-height: 1.7;
+}
 .footer-links {
     padding: 0 3rem;
 }
